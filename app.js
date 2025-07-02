@@ -9,7 +9,7 @@ const rule = new schedule.RecurrenceRule();
 logger.loginfo('app start at ')
 
 //fleet.testMail();
-//fleet.CheckLastSeen();
+fleet.CheckLastSeen();
 const job = schedule.scheduleJob(`*/${cfg.config.check_every} * * * * `, function () {
     logger.loginfo('app tick');
     try {

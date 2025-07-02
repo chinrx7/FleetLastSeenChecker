@@ -2,32 +2,38 @@ const axios = require('axios');
 const sender = require('./notification');
 const fs = require('fs');
 const qstr = require('querystring');
-const data = qstr.stringify({ grant_type: 'password', username: 'sat', password: '1234' });
+const data = { username: "sat", password: "1234" }
 const logger = require('./log');
 const cfg = JSON.parse(fs.readFileSync('./config/app.json'));
 
+const url = `${cfg.API}`
 
 module.exports.CheckLastSeen = async () => {
     const tags = this.getTagConfig();
 
 
-    let treq = [];
+    let treq = { Name : []};
     for (const t of tags.Vessels) {
         if (t.Enable === 1) {
-            const r = { name: t.Name, tagName: t.Tag };
-            treq.push(r);
+            //const r = { name: t.Name, tagName: t.Tag };
+            treq.Name.push(t.Tag);
         }
     }
 
+
+    //console.log(url)
+
     let token;
-    await axios.post('https://www.fleetvisual.com/token', data, {
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    await axios.post(`${url}/authen`, data, {
+        headers: { 'Content-Type': 'application/json' }
     })
-        .then(response => token = `${response.data.token_type} ${response.data.access_token}`)
+        .then(response => token = `${response.data.Access.Token}`)
         .catch(error => logger.loginfo(`Fleet api autenication error ${error}`));
 
+    //console.log(token)
+
     let rdata;
-    await axios.post('https://www.fleetvisual.com/api/vessels/getcurrentvalues', treq, { headers: { Authorization: token } })
+    await axios.post(`${url}/getcurrentvalues`, treq, { headers: { Authorization: token } })
         .then((res) => {
             rdata = res.data;
         })
@@ -37,9 +43,10 @@ module.exports.CheckLastSeen = async () => {
     const cdate = new Date();
 
     let txtAlert = '';
+    //console.log(rdata)
 
     for (const r of rdata) {
-        const ldate = new Date(r.dateTime);
+        const ldate = new Date(r.TimeStamp);
         const diffMilliseconds = Math.abs(cdate - ldate);
         const diffMinutes = Math.floor(diffMilliseconds / (1000 * 60));
         //txtAlert =  txtAlert + `${r.name} last seen ${diffMinutes} minutes ago \r\n`;
@@ -53,6 +60,7 @@ module.exports.CheckLastSeen = async () => {
     // if (chkEngine.length > 0) {
     //     txtAlert = txtAlert + chkEngine;
     // }
+
 
     if (txtAlert.length > 0) {
         logger.loginfo(`last seen exeed time limit ${txtAlert}`);
@@ -84,14 +92,14 @@ module.exports.engineCheck = async () => {
     //console.log(treq)
 
     let token;
-    await axios.post('https://www.fleetvisual.com/token', data, {
+    await axios.post(`${url}/authen`, data, {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
     })
         .then(response => token = `${response.data.token_type} ${response.data.access_token}`)
         .catch(error => logger.loginfo(`Fleet api autenication error ${error}`));
 
     let rdata;
-    await axios.post('https://www.fleetvisual.com/api/vessels/getcurrentvalues', treq, { headers: { Authorization: token } })
+    await axios.post(`${url}/getcurrentvalues`, treq, { headers: { Authorization: token } })
         .then((res) => {
             rdata = res.data;
         })
