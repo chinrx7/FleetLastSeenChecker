@@ -1,0 +1,243 @@
+{
+    "Checkers": [
+        {
+            "Name": "BB TONGKAM",
+            "Prefix": "BB_TONGKAM",
+            "Engine": [
+                {
+                    "Name": "DG1",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG2",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG3",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG4",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                }
+            ],
+            "Enable": 1
+        },
+        {
+            "Name": "BB JINDAMANEE",
+            "Prefix": "BB_JINDAMANEE",
+            "Engine": [
+                {
+                    "Name": "DG1",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG2",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG3",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG4",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                }
+            ],
+            "Enable": 1
+        },
+        {
+            "Name": "BB INTAN",
+            "Prefix": "BB_INTAN",
+            "Engine": [
+                {
+                    "Name": "DG1",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG2",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG3",
+                    "Tag": [
+                        "FIN-RAW-VTOTAL",
+                        "FOUT-RAW-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG4",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                }
+            ],
+            "Enable": 1
+        },
+        {
+            "Name": "BB MAKMUR",
+            "Prefix": "BB_MAKMUR",
+            "Engine": [
+                {
+                    "Name": "DG1",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG2",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG3",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG4",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                }
+            ],
+            "Enable": 1
+        },
+        {
+            "Name": "BB MULIA",
+            "Prefix": "BB_MULIA",
+            "Engine": [
+                {
+                    "Name": "DG1",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG2",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG3",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                }
+            ],
+            "Enable": 1
+        },
+        {
+            "Name": "BB ZAMRUD",
+            "Prefix": "BB_ZAMRUD",
+            "Engine": [
+                {
+                    "Name": "DG1",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG2",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG3",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG4",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                }
+            ],
+            "Enable": 1
+        },
+        {
+            "Name": "BB GOMEN",
+            "Prefix": "BB_GOMEN",
+            "Engine": [
+                {
+                    "Name": "DG1",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG2",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                },
+                {
+                    "Name": "DG3",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                }
+                ,
+                {
+                    "Name": "DG4",
+                    "Tag": [
+                        "FIN-VTOTAL",
+                        "FOUT-VTOTAL"
+                    ]
+                }
+            ],
+            "Enable": 1
+        }
+    ]
+}

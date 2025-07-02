@@ -1,0 +1,69 @@
+{
+    "Vessels": [
+        {
+            "Name": "SC BONGKOT",
+            "Tag": "A06-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC BRAVE",
+            "Tag": "A03-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC CHOLUDEE",
+            "Tag": "SC_CHOLUEDEE-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC EMERALD",
+            "Tag": "A05-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC GLORY 1",
+            "Tag": "SC_GLORY1-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC GLORY 2",
+            "Tag": "A02-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC GLORY 3",
+            "Tag": "SC_GLORY3-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC GLORY 6",
+            "Tag": "A01-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC GLORY 7",
+            "Tag": "A04-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC PAILIN",
+            "Tag": "A07-VES-GPS-SPEED",
+            "Enable": 1
+        },
+        {
+            "Name": "SC RAJA",
+            "Tag": "SC_RAJA-VES-GPS-SPEED",
+            "Enable": 0
+        },
+        {
+            "Name": "SC SULTAN",
+            "Tag": "SC_SULTAN-VES-GPS-SPEED",
+            "Enable": 0
+        },
+        {
+            "Name": "SC WINTER",
+            "Tag": "A09-VES-GPS-SPEED",
+            "Enable": 1
+        }
+    ]
+}

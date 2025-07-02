@@ -1,0 +1,15 @@
+{
+    "mail" : [
+        "suttichai@sat-solutions.com",
+        "pakkanan@sat-solutions.com",
+        "san@sat-solutions.com",
+        "Nattaphum@sat-solutions.com",
+        "chinnaphat@sat-solutions.com",
+        "tepsomrit@sat-solutions.com",
+		"satsdevteam@gmail.com"
+    ],
+    "config" :{
+        "check_every" : 60,
+        "time_limit" : 60
+    }
+}
