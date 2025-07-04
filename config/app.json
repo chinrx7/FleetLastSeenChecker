@@ -12,5 +12,5 @@
         "check_every" : 60,
         "time_limit" : 60
     },
-    "API" : "http://sats3.myddns.me:9800"
+    "API" : "/api"
 }
